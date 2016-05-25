@@ -1,0 +1,26 @@
+name       : sunflower
+version    : 0.3.61
+release    : 3
+source     :
+    - http://sunflower-fm.org/pub/sunflower-0.3-61.tgz : 49a7e62ffb47e07da8ffc755b3b1d25a4f97b65641249b1946f88abdefabe8ec
+license    : GPL-3.0
+component  : desktop
+summary    : Sunflower FM is a Twin-panel file manager.
+description: |
+    Small and highly customizable twin-panel file manager for Linux. It is intended to be an easy-to-use and powerful file manager that seamlessly integrates into the GNOME desktop environment (but not limited to).
+builddeps  :
+    - desktop-file-utils
+    - pkgconfig(pygobject-2.0)
+    - pkgconfig(librsvg-2.0)
+rundeps    :
+    - python-chardet
+    - python-dbus
+    - gvfs
+    - mutagen
+install    : |
+    echo -e '#!/bin/sh\n\nexec /usr/share/sunflower/Sunflower.py "$@"' > sunflower
+    install -Dm755 sunflower "$installdir/usr/bin/sunflower"
+    install -d "$installdir/usr/share/sunflower"
+    cp -r * "$installdir/usr/share/sunflower"
+    install -Dm644 Sunflower.desktop "$installdir/usr/share/applications/sunflower.desktop"
+    install -Dm644 images/sunflower_64.png "$installdir/usr/share/pixmaps/sunflower.png"
