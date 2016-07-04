@@ -1,6 +1,6 @@
 name       : sunflower
 version    : 0.3.61
-release    : 1
+release    : 2
 source     :
     - http://sunflower-fm.org/pub/sunflower-0.3-61.tgz : 49a7e62ffb47e07da8ffc755b3b1d25a4f97b65641249b1946f88abdefabe8ec
 license    : GPL-3.0
@@ -17,6 +17,7 @@ rundeps    :
     - mutagen
     - python-chardet
     - python-dbus
+    - python-gtk2
 install    : |
     install -D -m 0755 $pkgfiles/sunflower $installdir/usr/bin/sunflower
     install -d -m 0644 $installdir/usr/share/sunflower
