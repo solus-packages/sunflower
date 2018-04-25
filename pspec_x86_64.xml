@@ -5,7 +5,7 @@
             <Name>Joshua Strobl</Name>
             <Email>joshua@stroblindustries.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-or-later</License>
         <PartOf>desktop</PartOf>
         <Summary xml:lang="en">Sunflower FM is a Twin-panel file manager.</Summary>
         <Description xml:lang="en">Small and highly customizable twin-panel file manager for Linux. It is intended to be an easy-to-use and powerful file manager that seamlessly integrates into the GNOME desktop environment (but not limited to).
@@ -26,8 +26,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2017-10-08</Date>
+        <Update release="4">
+            <Date>2018-04-25</Date>
             <Version>0.3.61</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
