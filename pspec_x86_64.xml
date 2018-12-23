@@ -2,8 +2,8 @@
     <Source>
         <Name>sunflower</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>desktop</PartOf>
@@ -19,19 +19,186 @@
 </Description>
         <PartOf>desktop</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/sunflower</Path>
             <Path fileType="data">/usr/share/applications/sunflower.desktop</Path>
             <Path fileType="data">/usr/share/pixmaps/sunflower.png</Path>
-            <Path fileType="data">/usr/share/sunflower</Path>
+            <Path fileType="data">/usr/share/sunflower/AUTHORS</Path>
+            <Path fileType="data">/usr/share/sunflower/CHANGES</Path>
+            <Path fileType="data">/usr/share/sunflower/COPYING</Path>
+            <Path fileType="data">/usr/share/sunflower/DEPENDS</Path>
+            <Path fileType="data">/usr/share/sunflower/LICENSE</Path>
+            <Path fileType="data">/usr/share/sunflower/README.md</Path>
+            <Path fileType="data">/usr/share/sunflower/Sunflower.desktop</Path>
+            <Path fileType="data">/usr/share/sunflower/Sunflower.py</Path>
+            <Path fileType="data">/usr/share/sunflower/TODO</Path>
+            <Path fileType="data">/usr/share/sunflower/application/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/accelerator_group.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/accelerator_manager.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/associations.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/common.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/config.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/dbus_common.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/dbus_interface.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/emblems.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/about_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/error_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/history_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/input_dialog.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/keyring_manager_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/main_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/mounts_manager_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/operation_dialog.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/accelerators.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/associations.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/bookmarks.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/commands.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/display.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/item_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/operation.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/plugins.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/terminal.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/toolbar.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences/view_and_edit.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/preferences_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/gui/properties_window.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/history.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/icons.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/indicator.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/keyring.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/main.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/menus.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/mounts.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/notifications.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/operation.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/parameters.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/column_editor_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/column_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/find_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/item_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/monitor.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/mount_manager_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/provider.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/rename_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/terminal.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/toolbar_factory.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugin_base/viewer_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/archive_support/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/archive_support/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/archive_support/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/archive_support/zip_provider.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/bookmark_button.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/bookmarks_button.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/home_directory_button.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/parent_directory_button.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/default_toolbar/separator.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/column_editor.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/dialogs.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/file_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/gio_extension.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/gio_provider.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/gio_wrapper.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/local_monitor.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/local_provider.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/file_list/trash_list.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/contents.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/default.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/find_file_extensions/size.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/gvim_viewer/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/gvim_viewer/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/gvim_viewer/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/owner_column/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/owner_column/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/owner_column/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/audio_metadata.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/default.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/letter_case.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/rename_extensions/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/sessions/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/sessions/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/sessions/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/system_terminal/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/system_terminal/plugin.conf</Path>
+            <Path fileType="data">/usr/share/sunflower/application/plugins/system_terminal/plugin.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/queue.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/toolbar.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/advanced_rename.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/disk_usage.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/find_files.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/version_check.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/tools/viewer.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/__init__.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/bookmarks_menu.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/breadcrumbs.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/completion_entry.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/emblems_renderer.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/settings_page.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/status_bar.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/tab_label.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/thumbnail_view.py</Path>
+            <Path fileType="data">/usr/share/sunflower/application/widgets/title_bar.py</Path>
+            <Path fileType="data">/usr/share/sunflower/images/splash.png</Path>
+            <Path fileType="data">/usr/share/sunflower/images/sunflower.png</Path>
+            <Path fileType="data">/usr/share/sunflower/images/sunflower.svg</Path>
+            <Path fileType="data">/usr/share/sunflower/images/sunflower_64.png</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/bg/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/bg/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/cs/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/cs/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/de/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/de/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/es/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/es/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/fr/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/fr/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/hu/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/hu/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/lv/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/lv/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/pl/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/pl/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/pt_BR/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/pt_BR/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/ru/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/ru/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sk/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sk/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sr/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sr/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sunflower.pot</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sv/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/sv/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/uk/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/uk/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/uk_UA/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/uk_UA/LC_MESSAGES/sunflower.po</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/zh_CN.GB2312/LC_MESSAGES/sunflower.mo</Path>
+            <Path fileType="data">/usr/share/sunflower/translations/zh_CN.GB2312/LC_MESSAGES/sunflower.po</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-04-25</Date>
+        <Update release="5">
+            <Date>2018-12-23</Date>
             <Version>0.3.61</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
