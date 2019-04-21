@@ -2,15 +2,15 @@
     <Source>
         <Name>sunflower</Name>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>desktop</PartOf>
         <Summary xml:lang="en">Sunflower FM is a Twin-panel file manager.</Summary>
         <Description xml:lang="en">Small and highly customizable twin-panel file manager for Linux. It is intended to be an easy-to-use and powerful file manager that seamlessly integrates into the GNOME desktop environment (but not limited to).
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>sunflower</Name>
@@ -193,12 +193,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-12-23</Date>
+        <Update release="6">
+            <Date>2019-04-21</Date>
             <Version>0.3.61</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
